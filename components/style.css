@@ -1,0 +1,145 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+/* div{
+  margin: 2px solid red
+} */
+
+.input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 15px;
+}
+
+
+
+.POKEDEX{
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  background-color: rgb(34, 33, 33);
+ /*  flex-direction: column; */
+}
+.columns{
+  max-width: 1440px;
+  flex-wrap: wrap;
+}
+
+.board{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card{
+  background-color: rgb(51, 51, 51);
+margin: 20px;
+}
+
+.card h1{
+  color: white;
+  font-size: 1.5rem;
+  text-align: right;
+  margin-right: 5%;
+  font-style: italic;
+}
+.card h1::before{
+  content: "#0";
+}
+
+.tipos p{
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: normal;
+  padding: 2px;
+}
+
+.column{
+  padding: 0px !important;
+}
+
+
+
+.is-fire{
+  background-color: rgba(250, 125, 41, 0.849);
+  
+}
+.is-water{
+  background-color: rgba(0, 125, 255, 0.849);
+}
+.is-electric{
+  background-color: rgba(255, 255, 0, 0.849);
+}
+.is-grass{
+  background-color: rgba(63, 255, 63, 0.884);
+}
+.is-ice{
+  background-color: rgba(0, 255, 255, 0.849);
+}
+.is-fighting{
+  background-color: rgba(255, 0, 0, 0.849);
+}
+.is-poison{
+  background-color: rgba(255, 0, 255, 0.849);
+}
+.is-ground{
+  background-color: rgba(125, 125, 0, 0.849);
+}
+.is-flying{
+  background-color: rgba(125, 0, 255, 0.849);
+}
+.is-psychic{
+  background-color: rgba(255, 0, 125, 0.849);
+}
+.is-bug{
+  background-color: rgba(0, 255, 125, 0.849);
+}
+.is-rock{
+  background-color: rgba(255, 125, 0, 0.849);
+}
+.is-ghost{
+  background-color: rgba(125, 0, 0, 0.849);
+}
+.is-dragon{
+  background-color: rgba(125, 0, 0, 0.849);
+}
+.is-dark{
+  background-color: rgba(20, 20, 20, 0.849);
+}
+.is-steel{
+  background-color: rgba(125, 125, 125, 0.849);
+}
+.is-fairy{
+  background-color: rgba(255, 255, 255, 0.849);
+}
+.is-normal{
+  background-color: rgba(175, 174, 174, 0.849);
+}
+.is-unknown{
+  background-color: rgba(125, 125, 125, 0.849);
+}
+.is-shadow{
+  background-color: rgba(71, 71, 71, 0.849);
+}
+.column{
+  gap: 1px;
+}
+.card img:hover{
+  transform: scale(1.01);
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    /* margin: 2px; */
+    margin: 5px 5px;
+    padding: 13px;
+    width: 46% !important;
+    border-radius: 5px;
+  }
+  .card img:hover{
+    transform: scale(1.01);
+    opacity: 0.8;
+  }
+}
